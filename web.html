@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Module · Digital FabLab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <nav>
+  <div class="nav-logo">AU</div>
+  <ul class="nav-links">
+    <li><a href="index.html">About</a></li>
+    <li><a href="index.html">Skills</a></li>
+    <li><a href="web.html">Web Dev</a></li>
+    <li><a href="index.html">Projects</a></li>
+    <li><a href="index.html">Agreement</a></li>
+    <li><a href="index.html">Contact</a></li>
+  </ul>
+</nav>
+
+    <section id="webdev">
+  <div class="section-label">Digital FabLab · Module</div>
+  <div class="section-title">Web Development</div>
+
+  <div class="webdev-intro reveal">
+    <div class="webdev-intro-icon">🌐</div>
+    <div class="webdev-intro-text">
+      <h3>Module Overview</h3>
+      <p>A structured 7-day journey through the fundamentals of web development — from basic HTML tags to building a complete To-Do List project using JavaScript. Click on any day to view notes, topics covered, and assignment details.</p>
+    </div>
+  </div>
+
+  <div class="day-cards">
+
+    <!-- DAY 1 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 1</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Basic HTML Tags</div>
+          <div class="day-subtitle">p, b, i, u, marquee, headings, br, hr & more</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 1 introduced us to the building blocks of every webpage — HTML tags. We learned how to structure text content, apply basic formatting, and understand how a browser renders HTML elements.</p>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>HTML document structure: <code>&lt;!DOCTYPE html&gt;</code>, <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code></li>
+          <li><span class="topic-dot"></span>Heading tags: <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> — hierarchy and usage</li>
+          <li><span class="topic-dot"></span>Paragraph tag <code>&lt;p&gt;</code>, line break <code>&lt;br&gt;</code>, horizontal rule <code>&lt;hr&gt;</code></li>
+          <li><span class="topic-dot"></span>Text formatting: <code>&lt;b&gt;</code> (bold), <code>&lt;i&gt;</code> (italic), <code>&lt;u&gt;</code> (underline), <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code></li>
+          <li><span class="topic-dot"></span>Marquee tag <code>&lt;marquee&gt;</code> — scrolling text, direction, behavior attributes</li>
+          <li><span class="topic-dot"></span>Comments in HTML: <code>&lt;!-- comment --&gt;</code></li>
+          <li><span class="topic-dot"></span>Special characters / HTML entities: <code>&amp;amp;</code>, <code>&amp;lt;</code>, <code>&amp;gt;</code>, <code>&amp;nbsp;</code></li>
+        </ul>
+        <div class="code-label">Sample Code</div>
+        <div class="code-block">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;title&gt;Day 1&lt;/title&gt;&lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is a &lt;b&gt;bold&lt;/b&gt; and &lt;i&gt;italic&lt;/i&gt; paragraph.&lt;/p&gt;
+    &lt;marquee&gt;Welcome to my page!&lt;/marquee&gt;
+    &lt;hr&gt;
+    &lt;p&gt;Line one.&lt;br&gt;Line two.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</div>
+        <div class="assignment-box">
+          <span class="icon">📝</span>
+          <p><strong>Assignment:</strong> Create an HTML page about yourself using all basic tags — headings, paragraphs, bold/italic text, a marquee with your name, and a horizontal rule dividing sections.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 2 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 2</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Media & Tables</div>
+          <div class="day-subtitle">Image, Anchor, Video/Audio, Tables</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 2 focused on embedding media and linking pages together. We also learned how to display structured data using HTML tables — one of the most versatile layout tools in basic HTML.</p>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Image tag <code>&lt;img&gt;</code> — src, alt, width, height attributes</li>
+          <li><span class="topic-dot"></span>Anchor tag <code>&lt;a&gt;</code> — href, target (_blank, _self), linking to sections with #id</li>
+          <li><span class="topic-dot"></span>Video tag <code>&lt;video&gt;</code> — src, controls, autoplay, loop, muted, width</li>
+          <li><span class="topic-dot"></span>Audio tag <code>&lt;audio&gt;</code> — src, controls, autoplay, loop</li>
+          <li><span class="topic-dot"></span>Table structure: <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code>, <code>&lt;caption&gt;</code></li>
+          <li><span class="topic-dot"></span>Table attributes: border, cellpadding, cellspacing, colspan, rowspan</li>
+          <li><span class="topic-dot"></span>Grouping: <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code></li>
+        </ul>
+        <div class="code-label">Sample Code — Table</div>
+        <div class="code-block">&lt;table border="1" cellpadding="8"&gt;
+  &lt;caption&gt;Student Marks&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;Subject&lt;/th&gt;&lt;th&gt;Marks&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;Mathematics&lt;/td&gt;&lt;td&gt;88&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Electronics&lt;/td&gt;&lt;td&gt;92&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</div>
+        <div class="assignment-box">
+          <span class="icon">📝</span>
+          <p><strong>Assignment:</strong> Build a page with your photo (img tag), a link to your favourite website, an embedded video, and a table showing your semester subjects and marks.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 3 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 3</span>
+        <div class="day-title-wrap">
+          <div class="day-title">HTML Forms</div>
+          <div class="day-subtitle">Input types, select, textarea, form attributes</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 3 was all about user interaction — HTML forms allow websites to collect data from users. We explored all major input types and form controls used in real-world websites.</p>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Form tag <code>&lt;form&gt;</code> — action, method (GET/POST) attributes</li>
+          <li><span class="topic-dot"></span>Input types: text, password, email, number, date, file, checkbox, radio, submit, reset, button</li>
+          <li><span class="topic-dot"></span>Label tag <code>&lt;label&gt;</code> and its importance for accessibility (for attribute)</li>
+          <li><span class="topic-dot"></span>Textarea <code>&lt;textarea&gt;</code> — rows, cols attributes</li>
+          <li><span class="topic-dot"></span>Select dropdown <code>&lt;select&gt;</code> and <code>&lt;option&gt;</code> tags</li>
+          <li><span class="topic-dot"></span>Fieldset and legend for grouping form elements</li>
+          <li><span class="topic-dot"></span>Required, placeholder, value, name attributes</li>
+        </ul>
+        <div class="code-label">Sample Code</div>
+        <div class="code-block">&lt;form action="/submit" method="POST"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name" placeholder="Your name" required&gt;
+
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;
+
+  &lt;label for="branch"&gt;Branch:&lt;/label&gt;
+  &lt;select id="branch" name="branch"&gt;
+    &lt;option value="etc"&gt;E&amp;TC&lt;/option&gt;
+    &lt;option value="cs"&gt;Computer Science&lt;/option&gt;
+  &lt;/select&gt;
+
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</div>
+        <div class="assignment-box">
+          <span class="icon">📝</span>
+          <p><strong>Assignment:</strong> Create a student registration form with fields for name, email, phone, branch (dropdown), gender (radio), interests (checkboxes), and a submit button.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 4 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 4</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Header, Nav, Footer & CSS Selectors</div>
+          <div class="day-subtitle">Semantic tags + all CSS selector types</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 4 introduced semantic HTML5 elements and a deep dive into CSS — the language that styles web pages. We covered every major CSS selector type used in professional development.</p>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Semantic HTML5: <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;footer&gt;</code></li>
+          <li><span class="topic-dot"></span>CSS linking methods: inline, internal (<code>&lt;style&gt;</code>), external stylesheet</li>
+          <li><span class="topic-dot"></span>Element selector: <code>p { }</code> — targets all elements of that type</li>
+          <li><span class="topic-dot"></span>Class selector: <code>.classname { }</code> — reusable styles</li>
+          <li><span class="topic-dot"></span>ID selector: <code>#idname { }</code> — unique element styling</li>
+          <li><span class="topic-dot"></span>Universal selector <code>* { }</code>, Group selector <code>h1, h2, p { }</code></li>
+          <li><span class="topic-dot"></span>Descendant <code>div p</code>, Child <code>div &gt; p</code>, Adjacent <code>h1 + p</code>, Sibling <code>h1 ~ p</code></li>
+          <li><span class="topic-dot"></span>Pseudo-classes: <code>:hover</code>, <code>:focus</code>, <code>:nth-child()</code>, <code>:first-child</code>, <code>:last-child</code></li>
+          <li><span class="topic-dot"></span>Pseudo-elements: <code>::before</code>, <code>::after</code>, <code>::placeholder</code></li>
+          <li><span class="topic-dot"></span>Attribute selector: <code>input[type="text"]</code></li>
+        </ul>
+        <div class="code-label">Sample CSS Selectors</div>
+        <div class="code-block">/* Element */        p { color: gray; }
+/* Class */          .card { background: white; }
+/* ID */             #main-nav { position: fixed; }
+/* Descendant */     nav a { text-decoration: none; }
+/* Pseudo-class */   a:hover { color: orange; }
+/* Pseudo-element */ p::first-line { font-weight: bold; }
+/* Attribute */      input[type="email"] { border: 2px solid blue; }</div>
+        <div class="assignment-box">
+          <span class="icon">📝</span>
+          <p><strong>Assignment:</strong> Build a complete webpage layout with a styled header (logo + nav links), a main content section, and a footer — using at least 5 different CSS selector types.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 5 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 5</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Box Model & Flexbox</div>
+          <div class="day-subtitle">margin, padding, border + CSS Flexbox layout</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 5 unlocked layout superpowers — understanding the CSS Box Model is fundamental to spacing, while Flexbox revolutionizes how we arrange elements on a page with ease and precision.</p>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Box Model: content → padding → border → margin (layers explained)</li>
+          <li><span class="topic-dot"></span>width, height, min-width, max-width, box-sizing: border-box</li>
+          <li><span class="topic-dot"></span>Margin shorthand: top right bottom left; margin: auto for centering</li>
+          <li><span class="topic-dot"></span>Border: border-width, border-style, border-color, border-radius</li>
+          <li><span class="topic-dot"></span>Flexbox container: <code>display: flex</code>, flex-direction, flex-wrap, justify-content, align-items, align-content, gap</li>
+          <li><span class="topic-dot"></span>Flex items: flex-grow, flex-shrink, flex-basis, align-self, order</li>
+          <li><span class="topic-dot"></span>Common patterns: navbar, card row, centered content, space-between layout</li>
+        </ul>
+        <div class="code-label">Sample — Flexbox Navbar</div>
+        <div class="code-block">.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #1a1a1a;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}</div>
+        <div class="assignment-box">
+          <span class="icon">📝</span>
+          <p><strong>Assignment:</strong> Create a responsive card layout using Flexbox — display 4 cards in a row that wrap on smaller screens. Each card should demonstrate proper use of the Box Model (padding, border, margin).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 6 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 6</span>
+        <div class="day-title-wrap">
+          <div class="day-title">JavaScript Basics & All Operations</div>
+          <div class="day-subtitle">Variables, data types, operators, functions, DOM</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 6 was a big leap — JavaScript brings pages to life! We covered the language fundamentals and all operation types, from arithmetic to DOM manipulation, which is the foundation of interactive web apps.</p>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Variables: var, let, const — differences and when to use each</li>
+          <li><span class="topic-dot"></span>Data types: String, Number, Boolean, null, undefined, Array, Object</li>
+          <li><span class="topic-dot"></span>Arithmetic operators: +, -, *, /, %, ** (exponent)</li>
+          <li><span class="topic-dot"></span>Assignment operators: =, +=, -=, *=, /=, %=</li>
+          <li><span class="topic-dot"></span>Comparison operators: ==, ===, !=, !==, &gt;, &lt;, &gt;=, &lt;=</li>
+          <li><span class="topic-dot"></span>Logical operators: && (AND), || (OR), ! (NOT)</li>
+          <li><span class="topic-dot"></span>String operators & template literals: <code>`Hello ${name}!`</code></li>
+          <li><span class="topic-dot"></span>Conditional statements: if / else if / else, ternary operator</li>
+          <li><span class="topic-dot"></span>Loops: for, while, do-while, for...of, for...in</li>
+          <li><span class="topic-dot"></span>Functions: declaration, expression, arrow functions</li>
+          <li><span class="topic-dot"></span>DOM manipulation: getElementById, querySelector, innerHTML, addEventListener</li>
+        </ul>
+        <div class="code-label">Sample — All Operator Types</div>
+        <div class="code-block">// Arithmetic
+let a = 10, b = 3;
+console.log(a + b);   // 13
+console.log(a % b);   // 1
+console.log(a ** b);  // 1000
+
+// Comparison & Logical
+console.log(a > b && b !== 0);  // true
+
+// Template literal
+let name = "Anuja";
+console.log(`Hello, ${name}! You scored ${a * b} marks.`);
+
+// DOM
+document.getElementById("output").innerHTML = "Hello!";</div>
+        <div class="assignment-box">
+          <span class="icon">📝</span>
+          <p><strong>Assignment:</strong> Build a simple calculator page using HTML + CSS + JavaScript that performs all arithmetic operations (add, subtract, multiply, divide) with input fields and displays the result dynamically.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 7 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 7</span>
+        <div class="day-title-wrap">
+          <div class="day-title">To-Do List Project</div>
+          <div class="day-subtitle">Final project combining HTML + CSS + JavaScript</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 7 was our capstone mini-project — building a fully functional To-Do List app from scratch. This project brought together everything we had learned: semantic HTML structure, CSS Flexbox styling, and JavaScript DOM manipulation with events and local storage.</p>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Project structure: HTML layout with input, button, and task list container</li>
+          <li><span class="topic-dot"></span>CSS styling: clean UI with Flexbox, hover effects, completed task strikethrough</li>
+          <li><span class="topic-dot"></span>JavaScript — adding tasks: push to array, render to DOM using innerHTML</li>
+          <li><span class="topic-dot"></span>Marking tasks complete: toggle class on click using classList.toggle()</li>
+          <li><span class="topic-dot"></span>Deleting tasks: removeChild() or filter() and re-render</li>
+          <li><span class="topic-dot"></span>Storing tasks: localStorage.setItem() / getItem() for persistence</li>
+          <li><span class="topic-dot"></span>Edge cases: empty input validation, Enter key event listener</li>
+        </ul>
+        <div class="code-label">Core JavaScript Logic</div>
+        <div class="code-block">let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
+function addTask() {
+  const input = document.getElementById('taskInput');
+  if (input.value.trim() === '') return;
+  tasks.push({ text: input.value, done: false });
+  input.value = '';
+  saveTasks(); renderTasks();
+}
+
+function toggleTask(index) {
+  tasks[index].done = !tasks[index].done;
+  saveTasks(); renderTasks();
+}
+
+function deleteTask(index) {
+  tasks.splice(index, 1);
+  saveTasks(); renderTasks();
+}
+
+function saveTasks() {
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+}
+
+function renderTasks() {
+  const list = document.getElementById('taskList');
+  list.innerHTML = tasks.map((t, i) => `
+    &lt;li class="${t.done ? 'done' : ''}"&gt;
+      &lt;span onclick="toggleTask(${i})"&gt;${t.text}&lt;/span&gt;
+      &lt;button onclick="deleteTask(${i})"&gt;✕&lt;/button&gt;
+    &lt;/li&gt;`).join('');
+}</div>
+        <div class="assignment-box">
+          <span class="icon">📝</span>
+          <p><strong>Assignment:</strong> Submit your complete To-Do List app — must include: add task, mark complete (strikethrough), delete task, and localStorage persistence so tasks survive a page refresh.</p>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end day-cards -->
+</section>
+
+<script>
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  revealEls.forEach(el => io.observe(el));
+
+  // Day card accordion
+  function toggleDay(card) {
+    const isOpen = card.classList.contains('open');
+    document.querySelectorAll('.day-card.open').forEach(c => c.classList.remove('open'));
+    if (!isOpen) card.classList.add('open');
+  }
+</script>
+
+</body>
+</html>
