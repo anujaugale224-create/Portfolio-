@@ -14,7 +14,6 @@
   <ul class="nav-links">
     <li><a href="index.html">About</a></li>
     <li><a href="index.html">Skills</a></li>
-    <li><a href="web.html">Web Dev</a></li>
     <li><a href="index.html">Projects</a></li>
     <li><a href="index.html">Agreement</a></li>
     <li><a href="index.html">Contact</a></li>
@@ -86,17 +85,9 @@
           <li><span class="topic-dot"></span>Table attributes: border, cellpadding, cellspacing, colspan, rowspan</li>
           <li><span class="topic-dot"></span>Grouping: <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code></li>
         </ul>
-        <div class="code-label">Sample Code — Table</div>
-        <div class="code-block">&lt;table border="1" cellpadding="8"&gt;
-  &lt;caption&gt;Student Marks&lt;/caption&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;&lt;th&gt;Subject&lt;/th&gt;&lt;th&gt;Marks&lt;/th&gt;&lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;&lt;td&gt;Mathematics&lt;/td&gt;&lt;td&gt;88&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;Electronics&lt;/td&gt;&lt;td&gt;92&lt;/td&gt;&lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</div>
+        <div class="code-label">Output</div>
+                <img src="day2.png" alt="Output Screenshot">
+
         <div class="assignment-box">
           <span class="icon">📝</span>
           <p><strong>Assignment:</strong> Build a page with your photo (img tag), a link to your favourite website, an embedded video, and a table showing your semester subjects and marks.</p>
@@ -125,22 +116,9 @@
           <li><span class="topic-dot"></span>Fieldset and legend for grouping form elements</li>
           <li><span class="topic-dot"></span>Required, placeholder, value, name attributes</li>
         </ul>
-        <div class="code-label">Sample Code</div>
-        <div class="code-block">&lt;form action="/submit" method="POST"&gt;
-  &lt;label for="name"&gt;Name:&lt;/label&gt;
-  &lt;input type="text" id="name" name="name" placeholder="Your name" required&gt;
+        <div class="code-label">Output</div>
+                       <img src="day3.png" alt="Output Screenshot">
 
-  &lt;label for="email"&gt;Email:&lt;/label&gt;
-  &lt;input type="email" id="email" name="email"&gt;
-
-  &lt;label for="branch"&gt;Branch:&lt;/label&gt;
-  &lt;select id="branch" name="branch"&gt;
-    &lt;option value="etc"&gt;E&amp;TC&lt;/option&gt;
-    &lt;option value="cs"&gt;Computer Science&lt;/option&gt;
-  &lt;/select&gt;
-
-  &lt;input type="submit" value="Submit"&gt;
-&lt;/form&gt;</div>
         <div class="assignment-box">
           <span class="icon">📝</span>
           <p><strong>Assignment:</strong> Create a student registration form with fields for name, email, phone, branch (dropdown), gender (radio), interests (checkboxes), and a submit button.</p>
@@ -172,14 +150,9 @@
           <li><span class="topic-dot"></span>Pseudo-elements: <code>::before</code>, <code>::after</code>, <code>::placeholder</code></li>
           <li><span class="topic-dot"></span>Attribute selector: <code>input[type="text"]</code></li>
         </ul>
-        <div class="code-label">Sample CSS Selectors</div>
-        <div class="code-block">/* Element */        p { color: gray; }
-/* Class */          .card { background: white; }
-/* ID */             #main-nav { position: fixed; }
-/* Descendant */     nav a { text-decoration: none; }
-/* Pseudo-class */   a:hover { color: orange; }
-/* Pseudo-element */ p::first-line { font-weight: bold; }
-/* Attribute */      input[type="email"] { border: 2px solid blue; }</div>
+        <div class="code-label">Output</div>
+                               <img src="day4.png" alt="Output Screenshot">
+
         <div class="assignment-box">
           <span class="icon">📝</span>
           <p><strong>Assignment:</strong> Build a complete webpage layout with a styled header (logo + nav links), a main content section, and a footer — using at least 5 different CSS selector types.</p>
@@ -208,20 +181,9 @@
           <li><span class="topic-dot"></span>Flex items: flex-grow, flex-shrink, flex-basis, align-self, order</li>
           <li><span class="topic-dot"></span>Common patterns: navbar, card row, centered content, space-between layout</li>
         </ul>
-        <div class="code-label">Sample — Flexbox Navbar</div>
-        <div class="code-block">.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: #1a1a1a;
-}
+        <div class="code-label">Output</div>
+                                       <img src="day5.png" alt="Output Screenshot">
 
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-}</div>
         <div class="assignment-box">
           <span class="icon">📝</span>
           <p><strong>Assignment:</strong> Create a responsive card layout using Flexbox — display 4 cards in a row that wrap on smaller screens. Each card should demonstrate proper use of the Box Model (padding, border, margin).</p>
@@ -254,22 +216,9 @@
           <li><span class="topic-dot"></span>Functions: declaration, expression, arrow functions</li>
           <li><span class="topic-dot"></span>DOM manipulation: getElementById, querySelector, innerHTML, addEventListener</li>
         </ul>
-        <div class="code-label">Sample — All Operator Types</div>
-        <div class="code-block">// Arithmetic
-let a = 10, b = 3;
-console.log(a + b);   // 13
-console.log(a % b);   // 1
-console.log(a ** b);  // 1000
+        <div class="code-label">Output</div>
+                                              <img src="day6.png" alt="Output Screenshot">
 
-// Comparison & Logical
-console.log(a > b && b !== 0);  // true
-
-// Template literal
-let name = "Anuja";
-console.log(`Hello, ${name}! You scored ${a * b} marks.`);
-
-// DOM
-document.getElementById("output").innerHTML = "Hello!";</div>
         <div class="assignment-box">
           <span class="icon">📝</span>
           <p><strong>Assignment:</strong> Build a simple calculator page using HTML + CSS + JavaScript that performs all arithmetic operations (add, subtract, multiply, divide) with input fields and displays the result dynamically.</p>
@@ -298,39 +247,9 @@ document.getElementById("output").innerHTML = "Hello!";</div>
           <li><span class="topic-dot"></span>Storing tasks: localStorage.setItem() / getItem() for persistence</li>
           <li><span class="topic-dot"></span>Edge cases: empty input validation, Enter key event listener</li>
         </ul>
-        <div class="code-label">Core JavaScript Logic</div>
-        <div class="code-block">let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+        <div class="code-label">Core JavaScript Logic Output</div>
+                                                     <img src="day6.png" alt="Output Screenshot">
 
-function addTask() {
-  const input = document.getElementById('taskInput');
-  if (input.value.trim() === '') return;
-  tasks.push({ text: input.value, done: false });
-  input.value = '';
-  saveTasks(); renderTasks();
-}
-
-function toggleTask(index) {
-  tasks[index].done = !tasks[index].done;
-  saveTasks(); renderTasks();
-}
-
-function deleteTask(index) {
-  tasks.splice(index, 1);
-  saveTasks(); renderTasks();
-}
-
-function saveTasks() {
-  localStorage.setItem('tasks', JSON.stringify(tasks));
-}
-
-function renderTasks() {
-  const list = document.getElementById('taskList');
-  list.innerHTML = tasks.map((t, i) => `
-    &lt;li class="${t.done ? 'done' : ''}"&gt;
-      &lt;span onclick="toggleTask(${i})"&gt;${t.text}&lt;/span&gt;
-      &lt;button onclick="deleteTask(${i})"&gt;✕&lt;/button&gt;
-    &lt;/li&gt;`).join('');
-}</div>
         <div class="assignment-box">
           <span class="icon">📝</span>
           <p><strong>Assignment:</strong> Submit your complete To-Do List app — must include: add task, mark complete (strikethrough), delete task, and localStorage persistence so tasks survive a page refresh.</p>

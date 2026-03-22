@@ -1,11 +1,60 @@
+
 <!DOCTYPE html>
 <html>
-  <head><title>Day 1</title></head>
-  <body>
-    <h1>Hello, World!</h1>
-    <p>This is a <b>bold</b> and <i>italic</i> paragraph.</p>
-    <marquee>Welcome to my page!</marquee>
-    <hr>
-    <p>Line one.<br>Line two.</p>
-  </body>
+<head>
+  <title>To-Do App</title>
+  <style>
+    body { font-family: Arial; }
+    ul { list-style: none; padding: 0; }
+    li { display: flex; justify-content: space-between; padding: 8px; }
+    .done { text-decoration: line-through; color: gray; }
+    button { background: red; color: white; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <h2>To-Do List</h2>
+  <input type="text" id="taskInput" placeholder="Enter task">
+  <button onclick="addTask()">Add</button>
+
+  <ul id="taskList"></ul>
+
+  <script>
+    let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
+    function addTask() {
+      const input = document.getElementById('taskInput');
+      if (input.value.trim() === '') return;
+      tasks.push({ text: input.value, done: false });
+      input.value = '';
+      saveTasks(); renderTasks();
+    }
+
+    function toggleTask(index) {
+      tasks[index].done = !tasks[index].done;
+      saveTasks(); renderTasks();
+    }
+
+    function deleteTask(index) {
+      tasks.splice(index, 1);
+      saveTasks(); renderTasks();
+    }
+
+    function saveTasks() {
+      localStorage.setItem('tasks', JSON.stringify(tasks));
+    }
+
+    function renderTasks() {
+      const list = document.getElementById('taskList');
+      list.innerHTML = tasks.map((t, i) => `
+        <li class="${t.done ? 'done' : ''}">
+          <span onclick="toggleTask(${i})">${t.text}</span>
+          <button onclick="deleteTask(${i})">✕</button>
+        </li>`).join('');
+    }
+
+    renderTasks();
+  </script>
+
+</body>
 </html>
