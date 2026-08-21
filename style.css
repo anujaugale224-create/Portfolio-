@@ -335,3 +335,22 @@
 .project-thumb.c8  { background: linear-gradient(135deg, #FF5C00, #7B2FFF); }
 .project-thumb.c9  { background: linear-gradient(135deg, #FFE033, #00D4C8); }
 .project-thumb.c10 { background: linear-gradient(135deg, #FF2D78, #7B2FFF); }
+/* ── CAD MODULE IMAGE GALLERY (Module 3) ── */
+.cad-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .8rem;
+  margin-bottom: 1.4rem;
+}
+.cad-gallery img {
+  width: calc(50% - .4rem);
+  max-width: 320px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.1);
+  display: block;
+  object-fit: cover;
+}
+@media (max-width: 640px) {
+  .cad-gallery img { width: 100%; max-width: 100%; }
+}

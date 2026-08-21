@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking Module · Digital FabLab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+  <div class="nav-logo">AU</div>
+  <ul class="nav-links">
+    <li><a href="index.html">About</a></li>
+    <li><a href="index.html">Skills</a></li>
+    <li><a href="index.html">Projects</a></li>
+    <li><a href="index.html">Agreement</a></li>
+    <li><a href="index.html">Contact</a></li>
+  </ul>
+</nav>
+
+    <section id="networking">
+  <div class="section-label">Digital FabLab · Module</div>
+  <div class="section-title">Networking</div>
+
+  <div class="webdev-intro reveal">
+    <div class="webdev-intro-icon">🔗</div>
+    <div class="webdev-intro-text">
+      <h3>Module Overview</h3>
+      <p>An introduction to computer networking — covering data communication fundamentals, network types and topologies, the OSI model, IP addressing, HTTP and DNS, and core protocols like DHCP, ARP, and ICMP.</p>
+    </div>
+  </div>
+
+  <div class="day-cards">
+
+    <!-- DAY 1 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 1</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Data Communication</div>
+          <div class="day-subtitle">Qualities, communication types &amp; data types</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 1 covered the basics of data communication: its components, the qualities of a good communication system, and the different ways data can be transmitted.</p>
+
+        <div class="code-label">Data Communication</div>
+        <p class="day-desc">Components: Sender, Medium, Receiver, Protocol.</p>
+
+        <div class="code-label">Qualities of Data Communication</div>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span><strong>Delivery</strong> — data must be delivered to the correct sender and receiver.</li>
+          <li><span class="topic-dot"></span><strong>Timeliness</strong> — data must be delivered on time.</li>
+          <li><span class="topic-dot"></span><strong>Jitter</strong> — variation in the delay of packet delivery.</li>
+          <li><span class="topic-dot"></span><strong>Accuracy</strong> — the data sent must be accurate / error-free.</li>
+          <li><span class="topic-dot"></span><strong>Security</strong></li>
+        </ul>
+
+        <div class="code-label">Types of Communication</div>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span><strong>Simplex</strong> — one-way communication (e.g. TV, Radio).</li>
+          <li><span class="topic-dot"></span><strong>Half-Duplex</strong> — only one side can transmit at a time (e.g. walkie-talkie).</li>
+          <li><span class="topic-dot"></span><strong>Full-Duplex</strong> — both sides can communicate freely at the same time (e.g. audio/video calls).</li>
+          <li><span class="topic-dot"></span><strong>Transmission types:</strong> Parallel, Serial.</li>
+        </ul>
+
+        <div class="code-label">Data Transmission Types</div>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span><strong>Parallel</strong> — all bits transferred together.</li>
+          <li><span class="topic-dot"></span><strong>Serial</strong> — bits transferred one at a time.</li>
+        </ul>
+
+        <div class="code-label">Types of Data</div>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span><strong>Oriented data</strong> — data that is directly given/provided.</li>
+          <li><span class="topic-dot"></span><strong>Observed data</strong> — data collected automatically by observing behavior (e.g. how Instagram's algorithm observes user activity).</li>
+          <li><span class="topic-dot"></span><strong>Inferred data</strong> — data predicted by analyzing observed data.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DAY 2 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 2</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Networking Roadmap</div>
+          <div class="day-subtitle">Network types, devices &amp; topologies</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 2 mapped out the broader world of networking — types of networks, key terms, devices, and how computers can be physically connected.</p>
+
+        <div class="code-label">Types of Networks</div>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span><strong>LAN</strong> — Local Area Network.</li>
+          <li><span class="topic-dot"></span><strong>MAN</strong> — Metropolitan Area Network (data shared between people within a city).</li>
+          <li><span class="topic-dot"></span><strong>WAN</strong> — Wide Area Network (data shared across a country/countries).</li>
+          <li><span class="topic-dot"></span><strong>Internet</strong> — open-source, publicly accessible network.</li>
+          <li><span class="topic-dot"></span><strong>Intranet</strong> — a private network limited to specific people (e.g. used by companies to prevent private data loss).</li>
+        </ul>
+
+        <div class="code-label">Key Concepts</div>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span><strong>Client-Server</strong> — the server acts as a bridge between the client (you) and the output/resource.</li>
+          <li><span class="topic-dot"></span><strong>TCP</strong> — Transmission Control Protocol.</li>
+          <li><span class="topic-dot"></span><strong>ISP</strong> — Internet Service Provider.</li>
+          <li><span class="topic-dot"></span><strong>DNS</strong> — a system that resolves domain names to prevent naming/addressing conflicts.</li>
+          <li><span class="topic-dot"></span><strong>NIC</strong> — Network Interface Card; connects a device to the LAN so data can be shared.</li>
+          <li><span class="topic-dot"></span><strong>MAC ID</strong> — a unique, unchangeable hardware address (analogous to a mobile's IMEI number).</li>
+        </ul>
+
+        <div class="code-label">Networking Devices</div>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span><strong>Hub</strong> — a central connection point directly linked to other computers.</li>
+          <li><span class="topic-dot"></span><strong>Switch</strong> — stores MAC addresses and saves them in frame format.</li>
+          <li><span class="topic-dot"></span><strong>Router</strong> — transfers data in packet format and can send it to many devices; multiple users/devices connect together, with data sent via MAC address.</li>
+        </ul>
+
+        <div class="code-label">Topology (ways to connect computers)</div>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span><strong>Bus Topology</strong> — all devices connected via one main cable in series.</li>
+          <li><span class="topic-dot"></span><strong>Star Topology</strong> — one central hub with devices connected in all directions from it.</li>
+          <li><span class="topic-dot"></span><strong>Mesh</strong> — most efficient topology for data sharing.</li>
+          <li><span class="topic-dot"></span>Parent device, child device, grandchild device (hierarchy concept).</li>
+          <li><span class="topic-dot"></span><strong>Ring</strong> — essentially a mix of two topologies.</li>
+        </ul>
+
+        <div class="code-label">Other Terms</div>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>IP Address, Routers, Server, Protocols.</li>
+          <li><span class="topic-dot"></span>Mail protocol: <strong>SMTP</strong>.</li>
+          <li><span class="topic-dot"></span><strong>FTP</strong>, <strong>HTTPS</strong>, Interface.</li>
+          <li><span class="topic-dot"></span>Internet — secure, available to all.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DAY 3 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 3</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Topology, RAG Model &amp; the OSI Model</div>
+          <div class="day-subtitle">Star/Mesh/Ring/Tree, RAG basics, 7-layer OSI model</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 3 continued with topology types, touched on the RAG model used with LLMs, and covered the OSI model in detail.</p>
+
+        <div class="code-label">Topology (continued)</div>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span><strong>Star Topology</strong> — computers connected in a star formation.</li>
+          <li><span class="topic-dot"></span><strong>Mesh Topology</strong> — all computers connected together; secure.</li>
+          <li><span class="topic-dot"></span><strong>Ring Topology</strong> — loop connection; if one node has a problem, it can affect others.</li>
+          <li><span class="topic-dot"></span><strong>Tree Topology</strong></li>
+        </ul>
+
+        <div class="code-label">RAG Model</div>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Works on top of LLMs; reduces hallucination.</li>
+          <li><span class="topic-dot"></span>Context-aware; uses memorization and testing.</li>
+          <li><span class="topic-dot"></span>Data is converted into vector/embedding form, then compared using similarity search — one of its best applications.</li>
+          <li><span class="topic-dot"></span><strong>OCR note:</strong> for further learning, use the PaddleOCR repository.</li>
+        </ul>
+
+        <div class="code-label">OSI Model — 7 Layers</div>
+        <p class="day-desc">Open System Interconnection: a 7-layer model used for networking devices.</p>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span><strong>1. Application</strong> — e.g. SMTP (mail), FTP, HTTPS; the interface layer where data transfer is visible to the user.</li>
+          <li><span class="topic-dot"></span><strong>2. Presentation</strong> — handles encryption, formatting, and compression; transforms data into bits.</li>
+          <li><span class="topic-dot"></span><strong>3. Session</strong> — establishes and maintains sessions; handles authorization and authentication; acts as a bridge.</li>
+          <li><span class="topic-dot"></span><strong>4. Transport</strong> — TCP (reliable, gets feedback/confirmation) vs UDP (no confirmation, no feedback); handles segmentation and error checking.</li>
+          <li><span class="topic-dot"></span><strong>5. Network</strong> — data is broken into small packets; handles IP addressing.</li>
+          <li><span class="topic-dot"></span><strong>6. Data Link</strong> — data is put into frames; links data to a physical (MAC) address; manages transfer speed between sender and receiver.</li>
+          <li><span class="topic-dot"></span><strong>7. Physical</strong> — physically transfers data as bits, via hardware like hubs and switches.</li>
+        </ul>
+
+        <div class="code-label">Additional Notes</div>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>ZIP files are used to compress the size of files/code.</li>
+          <li><span class="topic-dot"></span>Sender processes data top-to-bottom through the OSI layers; Receiver processes it bottom-to-top.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DAY 4 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 4</span>
+        <div class="day-title-wrap">
+          <div class="day-title">IP Addressing, HTTP &amp; URL Structure</div>
+          <div class="day-subtitle">IPv4/IPv6, HTTP methods, DNS, anatomy of a URL</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 4 covered data types, IP addressing, HTTP, DNS, and the full anatomy of a URL.</p>
+
+        <div class="code-label">RAG Model, ZIP &amp; OSI Direction</div>
+        <p class="day-desc">Works on top of LLMs; reduces hallucination; context-aware; uses memorization and testing; converts data into vector/embedding form, compared via similarity search. ZIP files used to compress file size/code. Sender processes top-to-bottom, Receiver processes bottom-to-top through OSI layers.</p>
+
+        <div class="code-label">1. Types of Data</div>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span><strong>Oriented data</strong> — data that is directly given.</li>
+          <li><span class="topic-dot"></span><strong>Observed data</strong> — automatically collected by observing behavior (e.g. Instagram's algorithm).</li>
+          <li><span class="topic-dot"></span><strong>Inferred data</strong> — predicted by analyzing observed data.</li>
+        </ul>
+
+        <div class="code-label">2. IP Address</div>
+        <p class="day-desc">A unique address assigned to a device.</p>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span><strong>Public IP</strong> — accessible to all via the internet.</li>
+          <li><span class="topic-dot"></span><strong>Private IP</strong> — available only to limited users, e.g. within private companies.</li>
+          <li><span class="topic-dot"></span><strong>Static IP</strong> — an IP address that doesn't change.</li>
+          <li><span class="topic-dot"></span><strong>Dynamic IP</strong> — changes when a device connects through a router (e.g. Raspberry Pi).</li>
+          <li><span class="topic-dot"></span><strong>IPv4</strong> — decimal format, 32-bit (e.g. 22.11.33.22), ~4.3 billion addresses.</li>
+          <li><span class="topic-dot"></span><strong>IPv6</strong> — hexadecimal format, 128-bit, created to overcome IPv4's address limit.</li>
+        </ul>
+
+        <div class="code-label">3. HTTP</div>
+        <p class="day-desc">HyperText Transfer Protocol — used to transfer data (HTML documents, images, multimedia) between web browsers and servers.</p>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span><strong>GET</strong> — fetch/retrieve data.</li>
+          <li><span class="topic-dot"></span><strong>POST</strong> — create data.</li>
+          <li><span class="topic-dot"></span><strong>PUT</strong> — update data.</li>
+          <li><span class="topic-dot"></span><strong>DELETE</strong> — delete data.</li>
+        </ul>
+
+        <div class="code-label">4. DNS</div>
+        <p class="day-desc">Domain Name System. Since every website has a different IP address that's hard to remember, DNS maps a human-readable name to that IP (e.g. google.com → an IP address).</p>
+
+        <div class="code-label">5. URL</div>
+        <p class="day-desc">Uniform Resource Locator — a web address that acts like a digital street address telling the browser where to go and how to retrieve content.</p>
+
+        <div class="code-label">6. Scheme</div>
+        <p class="day-desc">The first part of a URL, telling the browser which protocol to use (<code>http</code>/<code>https</code> for web pages, <code>mailto:</code> for email clients, <code>ftp:</code> for file transfers).</p>
+
+        <div class="code-label">7. Domain Name</div>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span><strong>Second-Level Domain (SLD)</strong> — the unique site/brand name (e.g. "google").</li>
+          <li><span class="topic-dot"></span><strong>Top-Level Domain (TLD)</strong> — the extension (e.g. ".com", ".org") indicating entity type.</li>
+          <li><span class="topic-dot"></span><strong>Subdomain</strong> — optional prefix (e.g. "www", "blog") to organize site sections.</li>
+        </ul>
+
+        <div class="code-label">8. Path</div>
+        <p class="day-desc">The specific location of a resource within the site's directory structure.</p>
+
+        <div class="code-label">9. Query</div>
+        <p class="day-desc">Starts with <code>?</code>; provides extra data like search terms or filters.</p>
+
+        <div class="code-label">10. Fragment</div>
+        <p class="day-desc">The part after <code>#</code>; points to a specific section/anchor within a page.</p>
+      </div>
+    </div>
+
+    <!-- DAY 5 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 5</span>
+        <div class="day-title-wrap">
+          <div class="day-title">DHCP, ARP &amp; ICMP</div>
+          <div class="day-subtitle">Automatic IP assignment &amp; core network protocols</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 5 covered how devices automatically get IP addresses, how IPs map to hardware addresses, and how network errors get reported.</p>
+
+        <div class="code-label">DHCP — Dynamic Host Configuration Protocol</div>
+        <p class="day-desc">Since IP assignment needs to be dynamic (able to change), DHCP is the protocol used. Works in 4 steps:</p>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span><strong>D</strong>iscover — device discovers the server.</li>
+          <li><span class="topic-dot"></span><strong>O</strong>ffer — server offers an IP to the device.</li>
+          <li><span class="topic-dot"></span><strong>R</strong>equest — device requests that IP.</li>
+          <li><span class="topic-dot"></span><strong>A</strong>cknowledge — server acknowledges and assigns the IP.</li>
+        </ul>
+
+        <div class="code-label">IP Address Concepts</div>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span><strong>Subnet Mask</strong> — divides an IP into two parts: network ID and host ID.</li>
+          <li><span class="topic-dot"></span><strong>Default Gateway</strong> — the path a device uses to reach the internet.</li>
+          <li><span class="topic-dot"></span><strong>Lease Time</strong> — the duration for which an IP address is assigned to a device.</li>
+        </ul>
+
+        <div class="code-label">ARP — Address Resolution Protocol</div>
+        <p class="day-desc">Maps known IP addresses to their corresponding physical MAC addresses, enabling communication within a local network.</p>
+
+        <div class="code-label">ICMP — Internet Control Message Protocol</div>
+        <p class="day-desc">A network layer protocol used by routers and hosts to send error messages and operational information, such as diagnostics for latency and reachability.</p>
+      </div>
+    </div>
+
+  </div><!-- end day-cards -->
+</section>
+
+<script>
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  revealEls.forEach(el => io.observe(el));
+
+  // Day card accordion
+  function toggleDay(card) {
+    const isOpen = card.classList.contains('open');
+    document.querySelectorAll('.day-card.open').forEach(c => c.classList.remove('open'));
+    if (!isOpen) card.classList.add('open');
+  }
+</script>
+
+</body>
+</html>

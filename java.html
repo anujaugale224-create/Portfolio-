@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Module · Digital FabLab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+  <div class="nav-logo">AU</div>
+  <ul class="nav-links">
+    <li><a href="index.html">About</a></li>
+    <li><a href="index.html">Skills</a></li>
+    <li><a href="index.html">Projects</a></li>
+    <li><a href="index.html">Agreement</a></li>
+    <li><a href="index.html">Contact</a></li>
+  </ul>
+</nav>
+
+    <section id="java">
+  <div class="section-label">Digital FabLab · Module</div>
+  <div class="section-title">Java Programming</div>
+
+  <div class="webdev-intro reveal">
+    <div class="webdev-intro-icon">☕</div>
+    <div class="webdev-intro-text">
+      <h3>Module Overview</h3>
+      <p>An introduction to Java programming — starting with the basics of what a programming language is, moving through variables, operators, loops, methods, and arrays, and finishing with an introduction to classes, objects, and constructors.</p>
+    </div>
+  </div>
+
+  <div class="day-cards">
+
+    <!-- DAY 1 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 1</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Introduction to Java</div>
+          <div class="day-subtitle">Programming basics, JDK/JVM, Hello World</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 1 covered the basics of programming languages and broke down the classic "Hello World" program line by line.</p>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Learned the basics of programming languages, with a brief look at Python and C++.</li>
+          <li><span class="topic-dot"></span>Java is used for building apps; Python is commonly used for AI/ML. Java is primarily object-oriented (with some procedural elements), while languages like C are purely procedural.</li>
+          <li><span class="topic-dot"></span>Java tools: <strong>JDK</strong> and <strong>JVM</strong> — the JVM converts Java code into a language the computer understands.</li>
+        </ul>
+        <div class="code-label">Basic Code</div>
+        <pre class="code-block">public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}</pre>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span><code>public</code> — an access modifier; means the class can be accessed from anywhere.</li>
+          <li><span class="topic-dot"></span><code>class</code> — a blueprint containing variables and methods; every Java program is built from classes. The class name must match the filename (e.g. <code>Demo.java</code> → <code>class Demo</code>).</li>
+          <li><span class="topic-dot"></span><code>{ }</code> — opens and closes the "box": everything inside belongs to that class.</li>
+          <li><span class="topic-dot"></span><code>main()</code> — the entry point; Java always starts running from here, like the front door of a house.</li>
+          <li><span class="topic-dot"></span><code>System.out.println()</code> — <code>System</code> is the computer, <code>out</code> is the screen, <code>println</code> prints the given text and moves to the next line.</li>
+          <li><span class="topic-dot"></span><code>;</code> — marks the end of a statement.</li>
+        </ul>
+        <div class="assignment-box">
+          <span class="icon">📝</span>
+          <p><strong>Assignment:</strong></p>
+          <pre class="code-block">public class Demo {
+    public static void main(String[] args) {
+        System.out.println("Hello fablab");
+        System.out.println("Im Ajay");
+        System.out.println("EXTC Department");
+        System.out.println("SSGMCE");
+    }
+}</pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 2 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 2</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Variables &amp; Data Types</div>
+          <div class="day-subtitle">Declaration, initialization &amp; practice programs</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 2 introduced variables — how to declare and initialize them — along with Java's data types.</p>
+        <div class="code-label">Declaration &amp; Initialization</div>
+        <pre class="code-block">int marks = 95; // stores a whole number
+
+int age = 20;
+System.out.println(age);   // prints 20 (the value)
+System.out.println("age"); // prints "age" (the literal text)</pre>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Practiced writing simple programs similar to C, but in Java — examples: a Calculator and a Simple Interest program.</li>
+          <li><span class="topic-dot"></span>Learned Data Types.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DAY 3 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 3</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Operators</div>
+          <div class="day-subtitle">Arithmetic, relational, assignment &amp; increment/decrement</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 3 covered the main categories of operators in Java.</p>
+
+        <div class="code-label">1. Arithmetic Operators</div>
+        <pre class="code-block">System.out.println("Sum : " + (a + b));
+System.out.println("Subtraction : " + (a - b));
+System.out.println("Multiplication : " + (a * b));
+System.out.println("Division : " + (a / b));
+System.out.println("Modulus : " + (a % b));</pre>
+
+        <div class="code-label">2. Relational Operators</div>
+        <pre class="code-block">System.out.println(a == b);
+System.out.println(a != b);
+System.out.println(a > b);
+System.out.println(a < b);
+System.out.println(a >= b);
+System.out.println(a <= b);</pre>
+
+        <div class="code-label">3. Assignment Operators</div>
+        <pre class="code-block">int c = 10;
+a += 5;
+System.out.println("c = " + c);
+System.out.println("a += c => " + (a += c));
+System.out.println("a -= c => " + (a -= c));
+System.out.println("a *= c => " + (a *= c));
+System.out.println("a /= c => " + (a /= c));
+System.out.println("a %= c => " + (a %= c));</pre>
+
+        <div class="code-label">4. Increment and Decrement Operators</div>
+        <pre class="code-block">int r = 10;
+r++;
+System...</pre>
+        <div class="assignment-box">
+          <span class="icon">📝</span>
+          <p><strong>Note:</strong> The increment/decrement example was left incomplete in the original notes.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 4 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 4</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Loops</div>
+          <div class="day-subtitle">Introduction to loops in Java</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 4 introduced loops in Java.</p>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Learned loops.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DAY 5 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 5</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Methods &amp; Arrays</div>
+          <div class="day-subtitle">Reusable code blocks, 1D &amp; 2D arrays</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 5 introduced methods as reusable blocks of code, and arrays for storing multiple values.</p>
+
+        <div class="code-label">Methods</div>
+        <p class="day-desc">A method is a block of code that performs a specific task.</p>
+        <pre class="code-block">static int add(int a, int b) {
+    return a + b;
+}
+
+static void greet() {
+    System.out.println("Hello");
+}</pre>
+        <pre class="code-block">public class Method {
+    static void add(int a, int b) {
+        System.out.println(a + b);
+    }
+    public static void main(String[] args) {
+        add(5, 10); // Calling the static method
+    }
+}</pre>
+        <pre class="code-block">public class Method {
+    static void square(int a) {
+        System.out.println(a * a);
+    }
+    public static void main(String[] args) {
+        square(5); // Calling the static method
+    }
+}</pre>
+
+        <div class="code-label">Array</div>
+        <pre class="code-block">public class Array {
+    public static void main(String[] args) {
+        int[] arr = new int[3]; // array
+        arr[0] = 4; // putting values
+        arr[1] = 5;
+        arr[2] = 7;
+
+        System.out.println(arr[0]); // print on screen using System.out.println()
+        System.out.println(arr[1]);
+        System.out.println(arr[3]);
+    }
+}</pre>
+
+        <div class="code-label">Array with User Input</div>
+        <pre class="code-block">import java.util.Scanner;
+
+public class Array {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in); // Get input from user
+
+        System.out.println("enter size");
+        int size = sc.nextInt(); // Declaration of array
+
+        int num[] = new int[size];
+        // input
+        for (int i = 0; i < size; i++) { // for getting input
+            num[i] = sc.nextInt();
+        }
+
+        System.out.println("array is");
+        for (int i = 0; i < size; i++) { // for printing array values
+            System.out.println(num[i]);
+        }
+    }
+}</pre>
+
+        <div class="code-label">2D Array</div>
+        <pre class="code-block">import java.util.Scanner;
+
+public class Array {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in); // Get input from user
+
+        int row = sc.nextInt();
+        int col = sc.nextInt();
+
+        int num[][] = new int[row][col];
+        // input
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                num[i][j] = sc.nextInt();
+            }
+        }
+
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                System.out.println(num[i][j]);
+            }
+            System.out.println();
+        }
+    }
+}</pre>
+      </div>
+    </div>
+
+    <!-- DAY 6 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 6</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Classes, Objects &amp; Constructors</div>
+          <div class="day-subtitle">Defining classes, creating objects, constructor chaining</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 6 introduced classes and objects, and how constructors are used to initialize them.</p>
+
+        <div class="code-label">Class with Constructor &amp; Method</div>
+        <pre class="code-block">class Student {
+    String name;
+    int age;
+    Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    void display() {
+        System.out.println(this.name);
+        System.out.println(this.age);
+    }
+}</pre>
+
+        <div class="code-label">Class with main() &amp; Object Creation</div>
+        <pre class="code-block">public class Student {
+    int age;
+    String name;
+
+    Student(int age, String name) {
+        this.age = age;
+        this.name = name;
+    }
+
+    void display() {
+        System.out.println(this.age + " " + this.name);
+    }
+
+    public static void main(String[] args) {
+        Student s1 = new Student(20, "Ajay");
+        s1.display();
+    }
+}</pre>
+
+        <div class="code-label">Constructor Chaining</div>
+        <pre class="code-block">public class CallConstructor {
+    CallConstructor() {
+        System.out.println("Ajay");
+    }
+    CallConstructor(int a) {
+        this();
+        System.out.println(a);
+    }
+    public static void main(String[] args) {
+        CallConstructor constructor = new CallConstructor(100);
+    }
+}</pre>
+        <div class="assignment-box">
+          <span class="icon">📝</span>
+          <p><strong>Key Learning:</strong> A constructor can call another constructor in the same class using <code>this()</code>, allowing constructors to be chained together.</p>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end day-cards -->
+</section>
+
+<script>
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  revealEls.forEach(el => io.observe(el));
+
+  // Day card accordion
+  function toggleDay(card) {
+    const isOpen = card.classList.contains('open');
+    document.querySelectorAll('.day-card.open').forEach(c => c.classList.remove('open'));
+    if (!isOpen) card.classList.add('open');
+  }
+</script>
+
+</body>
+</html>
