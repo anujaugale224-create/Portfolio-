@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laser Cutting Module · Digital FabLab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+  <div class="nav-logo">AU</div>
+  <ul class="nav-links">
+    <li><a href="index.html">About</a></li>
+    <li><a href="index.html">Skills</a></li>
+    <li><a href="index.html">Projects</a></li>
+    <li><a href="index.html">Agreement</a></li>
+    <li><a href="index.html">Contact</a></li>
+  </ul>
+</nav>
+
+    <section id="laser-cutting">
+  <div class="section-label">Digital FabLab · Module</div>
+  <div class="section-title">Laser Cutting</div>
+
+  <div class="webdev-intro reveal">
+    <div class="webdev-intro-icon">✂️</div>
+    <div class="webdev-intro-text">
+      <h3>Module Overview</h3>
+      <p>A 7-day journey into laser cutting — starting with what laser cutting is and its real-world applications, moving through machine hardware, vector design, materials and settings, hands-on operation, a full project build, and finishing with troubleshooting and machine maintenance.</p>
+    </div>
+  </div>
+
+  <div class="day-cards">
+
+    <!-- DAY 1 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 1</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Intro &amp; Applications</div>
+          <div class="day-subtitle">What laser cutting is &amp; real-life uses</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>What is laser cutting?</li>
+          <li><span class="topic-dot"></span>How does a laser cutter work?</li>
+          <li><span class="topic-dot"></span>Explore real-life applications (signs, crafts, widgets, prototypes).</li>
+        </ul>
+        <div class="assignment-box">
+          <span class="icon">✅</span>
+          <p><strong>Activity:</strong> Spot 5 uses in your surroundings.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 2 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 2</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Hardware &amp; Software</div>
+          <div class="day-subtitle">Machine parts &amp; toolpath software</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Know your laser cutter (Y-axis, bed, nozzle, etc.).</li>
+          <li><span class="topic-dot"></span>Software: LaserGRBL / LightBurn.</li>
+          <li><span class="topic-dot"></span>Overview: power, focus, safety.</li>
+        </ul>
+        <div class="assignment-box">
+          <span class="icon">✅</span>
+          <p><strong>Activity:</strong> Make a toolpath from a basic shape.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 3 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 3</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Design Basics</div>
+          <div class="day-subtitle">Vector drawing, shapes &amp; file types</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Draw in Inkscape/Corel/AI or similar.</li>
+          <li><span class="topic-dot"></span>Shapes, lines, cut vs. engrave explained.</li>
+          <li><span class="topic-dot"></span>File types: SVG, DXF, etc. &amp; import into software.</li>
+        </ul>
+        <div class="assignment-box">
+          <span class="icon">✅</span>
+          <p><strong>Activity:</strong> Design a name tag or simple keychain in 2D.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 4 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 4</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Materials &amp; Settings</div>
+          <div class="day-subtitle">Power, speed, frequency &amp; safety</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Materials used: acrylic, wood, cardboard, etc.</li>
+          <li><span class="topic-dot"></span>Key settings: Power, Speed, Frequency, Passes.</li>
+          <li><span class="topic-dot"></span>Focus &amp; ventilation: safety tips.</li>
+        </ul>
+        <div class="assignment-box">
+          <span class="icon">✅</span>
+          <p><strong>Activity:</strong> Cut test samples and compare results.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 5 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 5</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Operating the Laser</div>
+          <div class="day-subtitle">Machine setup &amp; running a job safely</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Setting up the machine and aligning.</li>
+          <li><span class="topic-dot"></span>Running your file: start to finish.</li>
+          <li><span class="topic-dot"></span>Safety first!</li>
+        </ul>
+        <div class="assignment-box">
+          <span class="icon">✅</span>
+          <p><strong>Activity:</strong> Cut your design on the material.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 6 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 6</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Project Day</div>
+          <div class="day-subtitle">Build, assemble &amp; document</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Make something useful or creative.</li>
+          <li><span class="topic-dot"></span>Assemble (if needed) and add finishing.</li>
+          <li><span class="topic-dot"></span>Document your process (photos, notes, problems).</li>
+        </ul>
+        <div class="assignment-box">
+          <span class="icon">✅</span>
+          <p><strong>Activity:</strong> Build and showcase your final project.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 7 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 7</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Review &amp; Maintenance</div>
+          <div class="day-subtitle">Troubleshooting, cleaning &amp; wrap-up</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Troubleshooting common issues.</li>
+          <li><span class="topic-dot"></span>Cleaning the machine.</li>
+          <li><span class="topic-dot"></span>Quick tips to improve cutting accuracy &amp; life.</li>
+          <li><span class="topic-dot"></span>What you've learned + what's next.</li>
+        </ul>
+        <div class="assignment-box">
+          <span class="icon">✅</span>
+          <p><strong>Activity:</strong> Clean your laser and evaluate the process.</p>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end day-cards -->
+</section>
+
+<script>
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  revealEls.forEach(el => io.observe(el));
+
+  // Day card accordion
+  function toggleDay(card) {
+    const isOpen = card.classList.contains('open');
+    document.querySelectorAll('.day-card.open').forEach(c => c.classList.remove('open'));
+    if (!isOpen) card.classList.add('open');
+  }
+</script>
+
+</body>
+</html>

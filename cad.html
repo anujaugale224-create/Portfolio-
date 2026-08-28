@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer-Aided Design (CAD) Module · Digital FabLab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+  <div class="nav-logo">AU</div>
+  <ul class="nav-links">
+    <li><a href="index.html">About</a></li>
+    <li><a href="index.html">Skills</a></li>
+    <li><a href="index.html">Projects</a></li>
+    <li><a href="index.html">Agreement</a></li>
+    <li><a href="index.html">Contact</a></li>
+  </ul>
+</nav>
+
+    <section id="cad">
+  <div class="section-label">Digital FabLab · Module 3</div>
+  <div class="section-title">Computer-Aided Design (CAD)</div>
+
+  <div class="webdev-intro reveal">
+    <div class="webdev-intro-icon">📐</div>
+    <div class="webdev-intro-text">
+      <h3>Module Overview</h3>
+      <p>A 7-day journey into Computer-Aided Design — starting with basic 2D sketching commands, moving through 3D extrusion and assembly design, modeling standard mechanical parts like nuts and bolts, designing gears and understanding mechanical motion, and finishing with a complete AutoCAD button design project. Click on any day to view notes, topics covered, and screenshots.</p>
+    </div>
+  </div>
+
+  <div class="day-cards">
+
+    <!-- DAY 1 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 1</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Sketching Basics</div>
+          <div class="day-subtitle">Line, Rectangle, Circle & their sub-types</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 1 introduced the basics of sketching in a CAD environment — the foundation every 3D model is built on. We learned the core drawing commands and a few essential selection and editing shortcuts.</p>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Learned the basics of how to sketch, and the core drawing commands: Line, Rectangle, and Circle, along with their sub-types.</li>
+          <li><span class="topic-dot"></span>Selecting a closed loop: double-clicking selects the entire chain of connected lines, provided the diagram (loop) is closed.</li>
+          <li><span class="topic-dot"></span>Creating a construction line: select the line and press <code>X</code> to toggle it to a construction line.</li>
+        </ul>
+        <div class="code-label">Steps Followed</div>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Draw a sketch, starting from the top view.</li>
+        </ul>
+        <div class="assignment-box">
+          <span class="icon">📝</span>
+          <p><strong>Practice:</strong> Sketch a simple shape from the top view using the Line, Rectangle, and Circle tools, then practice selecting a closed loop with a double-click and converting a line to a construction line using the <code>X</code> shortcut.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 2 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 2</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Sketch Selection & Construction Lines</div>
+          <div class="day-subtitle">Selecting closed loops, construction geometry</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 2 built on the sketching basics — practicing the same core commands (Line, Rectangle, Circle and their sub-types) while going deeper into selection techniques and construction geometry.</p>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Practiced sketching using Line, Rectangle, Circle, and their sub-types.</li>
+          <li><span class="topic-dot"></span>Double-clicking selects the whole chain of connected lines when the diagram is closed.</li>
+          <li><span class="topic-dot"></span>To make a construction line: select the line and press <code>X</code>.</li>
+        </ul>
+        <div class="code-label">Output</div>
+        <div class="cad-gallery">
+          <img src="cad-day2-1.jpg" alt="Day 2 CAD sketch output 1" onerror="this.onerror=null;this.src='';this.alt='Image unavailable';this.style.display='none';">
+          <img src="cad-day2-2.jpg" alt="Day 2 CAD sketch output 2" onerror="this.onerror=null;this.src='';this.alt='Image unavailable';this.style.display='none';">
+          <img src="cad-day2-3.jpg" alt="Day 2 CAD sketch output 3" onerror="this.onerror=null;this.src='';this.alt='Image unavailable';this.style.display='none';">
+          <img src="cad-day2-4.jpg" alt="Day 2 CAD sketch output 4" onerror="this.onerror=null;this.src='';this.alt='Image unavailable';this.style.display='none';">
+        </div>
+        <div class="assignment-box">
+          <span class="icon">📝</span>
+          <p><strong>Practice:</strong> Create a closed sketch, select the full loop using a double-click, and convert at least one line into a construction line.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 3 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 3</span>
+        <div class="day-title-wrap">
+          <div class="day-title">3D Extrude & Design Approaches</div>
+          <div class="day-subtitle">Part, Assembly & Hybrid Design, navigation shortcuts</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 3 moved from 2D sketches into 3D — using the Extrude command to turn flat profiles into solid bodies, and learning the different design approaches used in CAD software.</p>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Draw a sketch, then use Extrude to begin 3D designing.</li>
+          <li><span class="topic-dot"></span>Three 3D design approaches: Part Design, Assembly Design, and Hybrid Design.</li>
+          <li><span class="topic-dot"></span>An extruded profile (Part) can be combined using Body, Join, or Cut operations.</li>
+          <li><span class="topic-dot"></span>Individual Parts are combined together to form an Assembly.</li>
+          <li><span class="topic-dot"></span>Pan shortcut: click and hold the mouse scroll (middle) button.</li>
+          <li><span class="topic-dot"></span>Orbit shortcut: mouse scroll (middle) button + Shift.</li>
+        </ul>
+        <div class="code-label">Output</div>
+        <div class="cad-gallery">
+          <img src="cad-day3-1.jpg" alt="Fusion 360 Create menu with Extrude highlighted" onerror="this.onerror=null;this.src='';this.alt='Image unavailable';this.style.display='none';">
+          <img src="cad-day3-2.jpg" alt="Dimensioned dog-bone sketch profile" onerror="this.onerror=null;this.src='';this.alt='Image unavailable';this.style.display='none';">
+          <img src="cad-day3-3.jpg" alt="Dimensioned gear-shaped sketch profile" onerror="this.onerror=null;this.src='';this.alt='Image unavailable';this.style.display='none';">
+          <img src="cad-day3-4.jpg" alt="Dimensioned six-point star sketch profile" onerror="this.onerror=null;this.src='';this.alt='Image unavailable';this.style.display='none';">
+          <img src="cad-day3-5.jpg" alt="Whiteboard notes on 3D Extrude, Part and Assembly design" onerror="this.onerror=null;this.src='';this.alt='Image unavailable';this.style.display='none';">
+        </div>
+        <div class="assignment-box">
+          <span class="icon">📝</span>
+          <p><strong>Practice:</strong> Sketch a 2D profile, extrude it into a solid body, and practice navigating the 3D workspace using the Pan and Orbit shortcuts.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 4 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 4</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Mechanical Parts — Nut & Bolt</div>
+          <div class="day-subtitle">Modeling standard fasteners and their differences</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 4 introduced basic mechanical parts by modeling two of the most common fasteners — a nut and a bolt — and discussing how they differ in form and function.</p>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Learned about basic mechanical parts, focusing on the nut and bolt.</li>
+          <li><span class="topic-dot"></span>Discussed the difference between a nut and a bolt.</li>
+          <li><span class="topic-dot"></span>Modeled a bolt as a hex head with a threaded shaft, and a nut as a hex body with internal threads, as separate components within one assembly.</li>
+        </ul>
+        <div class="code-label">Output</div>
+        <div class="cad-gallery">
+          <img src="cad-day4-1.jpg" alt="Fusion 360 assembly with modeled nut and bolt components" onerror="this.onerror=null;this.src='';this.alt='Image unavailable';this.style.display='none';">
+          <img src="cad-day4-2.jpg" alt="Close-up of bolt hex head with positioning manipulator" onerror="this.onerror=null;this.src='';this.alt='Image unavailable';this.style.display='none';">
+        </div>
+        <div class="assignment-box">
+          <span class="icon">📝</span>
+          <p><strong>Practice:</strong> Model a hex-head bolt with a threaded shaft and a matching hex nut with internal threads, then position them together as an assembly.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 5 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 5</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Gear Design and Rotation</div>
+          <div class="day-subtitle">Gear teeth, motion & interaction between gears</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 5 covered gear design — one of the most fundamental mechanical components used to transmit motion and power.</p>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Learned to design gears in a CAD environment.</li>
+          <li><span class="topic-dot"></span>Practiced creating and arranging gear teeth.</li>
+          <li><span class="topic-dot"></span>Used rotation tools to understand the movement and interaction between gears.</li>
+          <li><span class="topic-dot"></span>Built an understanding of basic mechanical motion and how CAD is used to design mechanical components.</li>
+        </ul>
+        <div class="assignment-box">
+          <span class="icon">📝</span>
+          <p><strong>Practice:</strong> Design a gear with evenly arranged teeth, then use rotation tools to simulate how it meshes and interacts with a second gear.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 6 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 6</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Button Design in AutoCAD</div>
+          <div class="day-subtitle">2D drawing, editing tools & precise dimensioning</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 6 focused on precision drafting — designing a button entirely in AutoCAD using fundamental 2D drawing and editing tools.</p>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Designed a button in AutoCAD using basic 2D drawing and editing tools.</li>
+          <li><span class="topic-dot"></span>Practiced creating geometric shapes and applying accurate dimensions.</li>
+          <li><span class="topic-dot"></span>Modified the design to achieve the required shape.</li>
+          <li><span class="topic-dot"></span>Improved understanding of CAD drafting, precision, and digital product design.</li>
+        </ul>
+        <div class="assignment-box">
+          <span class="icon">📝</span>
+          <p><strong>Practice:</strong> Draft a button design in AutoCAD using 2D geometric shapes, applying precise dimensions, and refining the shape through editing tools.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 7 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 7</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Appearance & Construction</div>
+          <div class="day-subtitle">Finishing the button project, new tool sections</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <p class="day-desc">Day 7 wrapped up the button project from Day 6 and introduced two new areas of the CAD workspace: Appearance and Construction.</p>
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Completed the button design project.</li>
+          <li><span class="topic-dot"></span>Learned the Appearance section, used to apply materials and finishes to a model.</li>
+          <li><span class="topic-dot"></span>Learned a new section: Construction, used for construction geometry tools.</li>
+        </ul>
+        <div class="code-label">Output</div>
+        <div class="cad-gallery">
+          <img src="cad-day7-1.jpg" alt="Day 7 CAD output" onerror="this.onerror=null;this.src='';this.alt='Image unavailable';this.style.display='none';">
+        </div>
+        <div class="assignment-box">
+          <span class="icon">📝</span>
+          <p><strong>Practice:</strong> Finish the button project, then apply an appearance/material to the finished model and explore the Construction tools.</p>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end day-cards -->
+</section>
+
+<script>
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  revealEls.forEach(el => io.observe(el));
+
+  // Day card accordion
+  function toggleDay(card) {
+    const isOpen = card.classList.contains('open');
+    document.querySelectorAll('.day-card.open').forEach(c => c.classList.remove('open'));
+    if (!isOpen) card.classList.add('open');
+  }
+</script>
+
+</body>
+</html>

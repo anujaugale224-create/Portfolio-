@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking Module · Digital FabLab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+  <div class="nav-logo">AU</div>
+  <ul class="nav-links">
+    <li><a href="index.html">About</a></li>
+    <li><a href="index.html">Skills</a></li>
+    <li><a href="index.html">Projects</a></li>
+    <li><a href="index.html">Agreement</a></li>
+    <li><a href="index.html">Contact</a></li>
+  </ul>
+</nav>
+
+    <section id="networking">
+  <div class="section-label">Digital FabLab · Module</div>
+  <div class="section-title">Networking</div>
+
+  <div class="webdev-intro reveal">
+    <div class="webdev-intro-icon">🔗</div>
+    <div class="webdev-intro-text">
+      <h3>Module Overview</h3>
+      <p>A 7-day introduction to computer networking — covering data communication fundamentals, network types, topologies and devices, the OSI model and protocols, core internet protocols like HTTP, IP, DHCP and DNS, ARP and ICMP, and finishing with WebSocket/real-time communication and project discussion.</p>
+    </div>
+  </div>
+
+  <div class="day-cards">
+
+    <!-- DAY 1 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 1</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Data Communication</div>
+          <div class="day-subtitle">Meaning, components, transmission &amp; characteristics</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Meaning and basics of data communication.</li>
+          <li><span class="topic-dot"></span>Components of data communication.</li>
+          <li><span class="topic-dot"></span>Data transmission.</li>
+          <li><span class="topic-dot"></span>Characteristics of data communication.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DAY 2 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 2</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Computer Networks</div>
+          <div class="day-subtitle">Definition, need &amp; types of networks</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>What is a computer network?</li>
+          <li><span class="topic-dot"></span>Need for networking.</li>
+          <li><span class="topic-dot"></span>Types of networks.</li>
+          <li><span class="topic-dot"></span>PAN, LAN, MAN, WAN.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DAY 3 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 3</span>
+        <div class="day-title-wrap">
+          <div class="day-title">Topologies &amp; Networking Devices</div>
+          <div class="day-subtitle">Bus, Star, Ring, Mesh, Hybrid; Hub, Switch, Router</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Network topologies.</li>
+          <li><span class="topic-dot"></span>Bus, Star, Ring, Mesh, Hybrid.</li>
+          <li><span class="topic-dot"></span>Hub, Switch, Router.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DAY 4 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 4</span>
+        <div class="day-title-wrap">
+          <div class="day-title">OSI Model &amp; Protocols</div>
+          <div class="day-subtitle">Seven layers, layer functions &amp; protocol basics</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Introduction to the OSI model.</li>
+          <li><span class="topic-dot"></span>Seven layers of OSI.</li>
+          <li><span class="topic-dot"></span>Functions of each layer.</li>
+          <li><span class="topic-dot"></span>Introduction to network protocols.</li>
+          <li><span class="topic-dot"></span>Importance of protocols.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DAY 5 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 5</span>
+        <div class="day-title-wrap">
+          <div class="day-title">HTTP, IP, DHCP &amp; DNS</div>
+          <div class="day-subtitle">Web protocol, addressing &amp; name resolution</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>Introduction to HTTP.</li>
+          <li><span class="topic-dot"></span>HTTP methods: GET, POST, PUT, DELETE.</li>
+          <li><span class="topic-dot"></span>IP addresses.</li>
+          <li><span class="topic-dot"></span>IPv4 and IPv6.</li>
+          <li><span class="topic-dot"></span>DHCP.</li>
+          <li><span class="topic-dot"></span>DNS.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DAY 6 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 6</span>
+        <div class="day-title-wrap">
+          <div class="day-title">ARP, ICMP &amp; Revision</div>
+          <div class="day-subtitle">Address resolution, error reporting &amp; recap</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>What is ARP.</li>
+          <li><span class="topic-dot"></span>What is ICMP.</li>
+          <li><span class="topic-dot"></span>Revision of previous topics.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DAY 7 -->
+    <div class="day-card reveal" onclick="toggleDay(this)">
+      <div class="day-header">
+        <span class="day-num">Day 7</span>
+        <div class="day-title-wrap">
+          <div class="day-title">WebSocket &amp; Project Discussion</div>
+          <div class="day-subtitle">Real-time communication &amp; wrap-up</div>
+        </div>
+        <span class="day-arrow">▼</span>
+      </div>
+      <div class="day-body">
+        <ul class="topic-list">
+          <li><span class="topic-dot"></span>What is WebSocket.</li>
+          <li><span class="topic-dot"></span>What is Web Real-Time Communication (RTC).</li>
+          <li><span class="topic-dot"></span>Project ideas and discussion.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div><!-- end day-cards -->
+</section>
+
+<script>
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  revealEls.forEach(el => io.observe(el));
+
+  // Day card accordion
+  function toggleDay(card) {
+    const isOpen = card.classList.contains('open');
+    document.querySelectorAll('.day-card.open').forEach(c => c.classList.remove('open'));
+    if (!isOpen) card.classList.add('open');
+  }
+</script>
+
+</body>
+</html>
